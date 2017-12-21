@@ -1,0 +1,12 @@
+{
+	"name": "wavsplitter",
+	"authors": [
+		"Nate Rubin"
+	],
+	"dependencies": {
+		"wave-d": "~>1.0.6"
+	},
+	"description": "Split up WAVE files.",
+	"copyright": "Copyright © 2017, Nate Rubin",
+	"license": "MIT"
+}
