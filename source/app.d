@@ -11,10 +11,7 @@ void main(string[] argv)
 	ulong startIdx = input.sampleRate * start;
 	ulong endIdx = input.sampleRate * end;
 
-	writefln("channel len: %s, start: %s, end: %s", input.channel(0).length, startIdx, endIdx);
+	float[] new_samples = input.samples[startIdx*input.channels..endIdx*input.channels];
 
-	float[] left = input.channel(0)[startIdx..endIdx];
-	float[] right = input.channel(1)[startIdx..endIdx];
-
-	Sound(input.sampleRate, [left, right]).encodeWAV("out.wav");
+	Sound(input.sampleRate, 2, new_samples).encodeWAV("out.wav");
 }
