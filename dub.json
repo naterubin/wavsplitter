@@ -16,7 +16,7 @@
 			"description": "Split up WAV files",
 			"targetType": "executable",
 			"mainSourceFile": "source/app.d",
-			"excludedSourceFiles": ["source/plot.d"]
+      "excludedSourceFiles": ["source/plot.d", "source/lpf.d"]
 		},
 		{
 			"name": "plot",
@@ -24,7 +24,15 @@
 			"description": "Plot WAV data",
 			"targetType": "executable",
 			"mainSourceFile": "source/plot.d",
-			"excludedSourceFiles": ["source/app.d"]
-		}
+      "excludedSourceFiles": ["source/app.d", "source/lpf.d"]
+		},
+    {
+        "name": "lpf",
+        "targetName": "lpf",
+        "description": "Low Pass Filter",
+        "targetType": "executable",
+        "mainSourceFile": "source/lpf.d",
+        "excludedSourceFiles": ["source/app.d", "source/plot.d"]
+    }
 	]
 }
