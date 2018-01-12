@@ -8,5 +8,23 @@
 	},
 	"description": "Split up WAVE files.",
 	"copyright": "Copyright © 2017, Nate Rubin",
-	"license": "MIT"
+	"license": "MIT",
+	"configurations": [
+		{
+			"name": "splitter",
+			"targetName": "splitter",
+			"description": "Split up WAV files",
+			"targetType": "executable",
+			"mainSourceFile": "source/app.d",
+			"excludedSourceFiles": ["source/plot.d"]
+		},
+		{
+			"name": "plot",
+			"targetName": "plot",
+			"description": "Plot WAV data",
+			"targetType": "executable",
+			"mainSourceFile": "source/plot.d",
+			"excludedSourceFiles": ["source/app.d"]
+		}
+	]
 }
