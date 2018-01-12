@@ -12,7 +12,7 @@
 	"configurations": [
 		{
 			"name": "splitter",
-			"targetName": "splitter",
+			"targetName": "build/splitter",
 			"description": "Split up WAV files",
 			"targetType": "executable",
 			"mainSourceFile": "source/app.d",
@@ -20,7 +20,7 @@
 		},
 		{
 			"name": "plot",
-			"targetName": "plot",
+			"targetName": "build/plot",
 			"description": "Plot WAV data",
 			"targetType": "executable",
 			"mainSourceFile": "source/plot.d",
@@ -28,7 +28,7 @@
 		},
     {
         "name": "lpf",
-        "targetName": "lpf",
+        "targetName": "build/lpf",
         "description": "Low Pass Filter",
         "targetType": "executable",
         "mainSourceFile": "source/lpf.d",
